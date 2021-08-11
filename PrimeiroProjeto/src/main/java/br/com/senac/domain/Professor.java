@@ -8,19 +8,20 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity //vira uma tabela
-public class Aluno implements Serializable{
-
+@Entity
+public class Professor implements Serializable{
+	
+	
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -9188148431809422228L;
+	private static final long serialVersionUID = 1888891549045983467L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column(name="nomeAluno")
+	@Column(name="nomeProfessor")
 	private String nome;
 
 	public Integer getId() {
@@ -38,6 +39,7 @@ public class Aluno implements Serializable{
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	
 	
 	
 }
